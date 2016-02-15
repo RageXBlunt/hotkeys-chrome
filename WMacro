@@ -1,0 +1,27 @@
+*w::
+Loop
+{
+GetKeyState, state, w, P
+if State = U
+break
+; Otherwise:
+Send, {w}
+Sleep, 250
+}
+return
+
+*e::
+Loop
+{
+GetKeyState, state, e, P
+if State = U
+break
+; Otherwise:
+Send, {w}
+Sleep, 10
+}
+return
+
+F12::
+Exitapp
+return
